@@ -297,13 +297,12 @@ span {
   align-items: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-media-item_link:hover {
+a.social-media-item_link:hover,
+a.social-media-item_link:focus {
   background-color: #404bbf;
 }
 
-.social-media-item_link:focus {
-  background-color: #404bbf;
-}
+
 
 
 .icon {
@@ -446,15 +445,12 @@ span {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-media-item_link-footer:hover {
+a.social-media-item_link-footer:hover,
+a.social-media-item_link-footer:focus  {
   background-color: #31d0aa;
   
 }
 
-.social-media-item_link-footer
-:focus {
-  background-color: #31d0aa;
-}
 .social-media-name {
   font-weight: 500;
   font-size: 16px;
