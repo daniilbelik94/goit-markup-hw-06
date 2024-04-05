@@ -298,10 +298,12 @@ span {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .item_link:hover,
-.item_link:active {
+.active.item_link:active {
   background-color: #404bbf;
 }
-
+.active.item_link:focus {
+  background-color: #404bbf;
+}
 .icon {
   fill: #f4f4fd;
 }
@@ -442,8 +444,11 @@ span {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-footer:hover,
-.ink-footer:active  {
+.link-footer:hover {
+  background-color: #31d0aa;
+  
+}
+.active.link-footer:focus  {
   background-color: #31d0aa;
   
 }
