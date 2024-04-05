@@ -297,11 +297,10 @@ span {
   align-items: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.item_link:hover,
-.active.item_link:active {
+.item_link:hover {
   background-color: #404bbf;
 }
-.active.item_link:focus {
+.item_link:focus a {
   background-color: #404bbf;
 }
 .icon {
@@ -448,7 +447,7 @@ span {
   background-color: #31d0aa;
   
 }
-.active.link-footer:focus  {
+.link-footer:focus a {
   background-color: #31d0aa;
   
 }
