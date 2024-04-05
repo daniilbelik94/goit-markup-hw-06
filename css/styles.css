@@ -295,6 +295,10 @@ span {
 :focus {
   background-color: #404bbf;
 }
+.social-media-item_link
+:focus {
+  background-color: #404bbf;
+}
 
 .icon {
   fill: #f4f4fd;
