@@ -341,7 +341,7 @@ span {
   height: 100%;
 
 }
-.hidden-text:hover {
+.section-four-item:hover p {
   transform: translateY(0%);
 }
 
