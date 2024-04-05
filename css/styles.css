@@ -384,22 +384,19 @@ span {
   padding: 100px 0;
   
 }
-.footer-paragraph {
-font-weight: 400;
-font-size: 16px;
-line-height: 150%;
-letter-spacing: 0.02em;
-color: #F4F4FD;
-
-}
 
 .footer-container {
   background-color: #2e2f42;
   padding: 100px 0;
 }
-.footer-container-logo_text {
+.container-footer {
   display: flex;
   align-items: baseline;
+  margin-right: 120px;
+}
+
+.footer-container-logo_text {
+  margin-right: 120px;
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
