@@ -298,12 +298,9 @@ span {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .item_link:hover,
-.item_link:focus {
+.item_link:active {
   background-color: #404bbf;
 }
-
-
-
 
 .icon {
   fill: #f4f4fd;
@@ -446,7 +443,7 @@ span {
 }
 
 .link-footer:hover,
-.ink-footer:focus  {
+.ink-footer:active  {
   background-color: #31d0aa;
   
 }
