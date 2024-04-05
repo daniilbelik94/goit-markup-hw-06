@@ -300,7 +300,7 @@ span {
 .item_link:hover {
   background-color: #404bbf;
 }
-.item_link:focus a {
+.item_link:focus {
   background-color: #404bbf;
 }
 .icon {
