@@ -300,7 +300,7 @@ span {
 .item_link:hover {
   background-color: #404bbf;
 }
-.item_link:focus a {
+.item_link:active a {
   background-color: #404bbf;
 }
 .icon {
@@ -447,7 +447,7 @@ span {
   background-color: #31d0aa;
   
 }
-.link-footer:focus a {
+.link-footer:active a {
   background-color: #31d0aa;
   
 }
