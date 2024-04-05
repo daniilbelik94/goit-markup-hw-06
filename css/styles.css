@@ -300,7 +300,7 @@ span {
 .item_link:hover {
   background-color: #404bbf;
 }
-.list-social-media_item:focus a {
+.item_link:focus a {
   background-color: #404bbf;
 }
 .icon {
@@ -447,7 +447,7 @@ span {
   background-color: #31d0aa;
   
 }
-.list-social-media_item:focus a {
+.link-footer:focus {
   background-color: #31d0aa;
   
 }
