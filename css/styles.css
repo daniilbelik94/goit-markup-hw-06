@@ -531,6 +531,7 @@ span {
 
 
 .modal {
+  
   position: fixed;
   left: 0;
   top: 0;
@@ -541,10 +542,7 @@ span {
 
 }
 .modal-content {
-  display: flex; /* Додали цей стиль */
-  flex-direction: column; /* Додали цей стиль */
-  justify-content: center; /* Додали цей стиль */
-  align-items: center; /* Додали цей стиль */
+  
   position: absolute;
   top: 50%;
   left: 50%;
@@ -707,7 +705,6 @@ span {
 
 .modal_button-form {
   display: block;
-
   min-width: 169px;
   height: 56px;
   font-family: "Roboto", sans-serif;
@@ -729,10 +726,4 @@ span {
 .icon-modal-check {
   fill: white;
 
-}
-
-.button-send {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
