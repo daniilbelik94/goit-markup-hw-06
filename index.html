@@ -40,45 +40,13 @@
 <main>
 
   <!-- === SECTION ONE=== -->
-<section class="section-one">
-  <div class="container">
-
-    <h1 class="section-title">Effective Solutions for Your Business</h1>
-    <button class="main-button" id="openModal">Order Service</button>
-
-    <div class="modal" id="myModal">
-      <div class="modal-content">
-        <span class="close">&times;</span>
-        <h2 class="modal-title">Leave your contacts and we will call you back</h2>
-        <form>
-          <input type="text" 
-          name="name" 
-          placeholder="Name">
-          <input type="tel" 
-          name="phone" 
-          placeholder="Phone">
-          <input type="email"
-           name="email" 
-           placeholder="Email">
-          <textarea 
-          name="comment"
-           placeholder="Comment"></textarea>
-          <label>
-            <input class="input-modal-acception"
-             type="checkbox" 
-             name="accept" required> I accept the terms and
-              conditions of the <a class="privat-policy" href="#">Privacy Policy</a></label>
-          <button type="submit">Send</button>
-        </form>
-      </div>
+  <section class="section-one">
+    <div class="container">
+      <h1 class="section-title">Effective Solutions for Your Business</h1>
+      <button class="main-button" id="openModal">Order Service</button>
     </div>
-    <script src="./js/script.js"></script>
+  </section>
 
-  </div>
-</section>
-
-
-  
 
   <!-- ===SECTION TWO=== -->
 
@@ -400,8 +368,84 @@
           </a></li>
       </ul>
     </div>
+    <div class="modal-cotainer_footer">
+      <p class="modal-cotainer_footer-paragraph">Subscribe</p>
+      <form class="footer-form">
+        <label class="footer-label">
+          <input class="footer-input_email" type="email" name="email" placeholder="E-mail">
+          <button type="submit" class="button-input-submit">Subscribe
+            <svg class="icon footer-icon" width="24" height="24">
+              <use href="./images/icons.svg#iconicon-send"></use>
+            </svg>
+          </button>
+        </label>
+      </form>
+    </div>
   </div>
+
 </footer>
+
+
+<!-- ===modal window=== -->
+
+<div class="modal" id="myModal">
+  <div class="modal-content">
+    <button type="button" class="button-modal">
+      <svg class="icon modal-icon" width="8" height="8">
+        <use href="./images/icons.svg#iconVector"></use>
+      </svg>
+      </button>
+    <h2 class="modal-title">Leave your contacts and we will call you back</h2>
+    <form>
+      <div class="form-modal-window">
+        <label class="label-form" for="user-name" >Name</label>
+          <div class="input-container">
+            <input id="user-name" name="user-name" type="text" class="input">
+            <svg class="icon icon-modal-window" width="18" height="24">
+              <use href="./images/icons.svg#iconname"></use>
+            </svg>
+          </div>
+      </div>
+      <div class="form-modal-window">
+        <label class="label-form" for="user-name">Phone</label>
+        <div class="input-container">
+          <input id="user-name" name="user-name" type="text" class="input">
+          <svg class="icon icon-modal-window" width="18" height="24">
+            <use href="./images/icons.svg#iconphone"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="form-modal-window">
+        <label class="label-form" for="user-name">Email</label>
+        <div class="input-container">
+          <input id="user-name" name="user-name" type="text" class="input">
+          <svg class="icon icon-modal-window" width="18" height="24">
+            <use href="./images/icons.svg#iconmail"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="form-modal-window">
+        <label class="label-form" for="user-comment">Comment</label>
+        <div class="input-container">
+          <textarea class="textarea" name="user-comment"rows="10" placeholder="Text input" ></textarea>
+        </div>
+      </div>
+      <div class="checkbox-container">
+        <input class="checkbox-input" type="checkbox" name="user-privacy" id="user-privacy"  value="true">
+        <label class="user-privacy" for="user-privacy">
+          <span class="user-privacy-span">
+            
+          </span>
+        </label>
+      </div>
+    </form>
+  </div>
+</div>
+
+
+</div>
+
+
 </body>
 
 </html>
