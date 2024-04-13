@@ -1,4 +1,3 @@
-
 const modal = document.getElementById("myModal");
 const openModalButton = document.getElementById("openModal");
 const closeButton = modal.querySelector(".button-modal");
