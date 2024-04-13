@@ -541,6 +541,10 @@ span {
 
 }
 .modal-content {
+  display: flex; /* Додали цей стиль */
+  flex-direction: column; /* Додали цей стиль */
+  justify-content: center; /* Додали цей стиль */
+  align-items: center; /* Додали цей стиль */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -672,6 +676,18 @@ span {
   color: #8e8f99;
 
 }
+.span-label {
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  display: inline-flex;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px; 
+  fill: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .checkbox-input:checked + .user-privacy .span-label {
   background-color: #404BBF;
@@ -680,6 +696,7 @@ span {
 }
 
 .user-privacy-span {
+
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.04em;
@@ -690,6 +707,7 @@ span {
 
 .modal_button-form {
   display: block;
+
   min-width: 169px;
   height: 56px;
   font-family: "Roboto", sans-serif;
@@ -703,4 +721,18 @@ span {
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
   border-radius: 4px;
+}
+.modal_button-form:hover,
+.modal_button-form:focus {
+  background-color: #404BBF;
+}
+.icon-modal-check {
+  fill: white;
+
+}
+
+.button-send {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
