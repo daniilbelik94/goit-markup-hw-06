@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="./css/styles.css">
   <title>MainPage</title>
 </head>
-
+<!-- === HEADER=== -->
 <header class="header">
   <div class="container-header container">
     <nav class="header-menu-nav">
@@ -38,14 +38,51 @@
 </header>
 
 <main>
-  <section class="section-one">
-    <div class="container">
 
-      <h1 class="section-title">Effective Solutions for Your Business</h1>
-      <button class="main-button">Order Service</button>
+  <!-- === SECTION ONE=== -->
+<section class="section-one">
+  <div class="container">
+
+    <h1 class="section-title">Effective Solutions for Your Business</h1>
+    <button class="main-button" id="openModal">Order Service</button>
+
+    <div class="modal" id="myModal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 class="modal-title">Leave your contacts and we will call you back</h2>
+        <form>
+          <input type="text" 
+          name="name" 
+          placeholder="Name">
+          <input type="tel" 
+          name="phone" 
+          placeholder="Phone">
+          <input type="email"
+           name="email" 
+           placeholder="Email">
+          <textarea 
+          name="comment"
+           placeholder="Comment"></textarea>
+          <label>
+            <input class="input-modal-acception"
+             type="checkbox" 
+             name="accept" required> I accept the terms and
+              conditions of the <a class="privat-policy" href="#">Privacy Policy</a></label>
+          <button type="submit">Send</button>
+        </form>
+      </div>
     </div>
+    <script src="./js/script.js"></script>
 
-  </section>
+  </div>
+</section>
+
+
+  
+
+  <!-- ===SECTION TWO=== -->
+
+
   <section class="section-two">
     <div class="container">
       <h2 class="visually-hidden">Content</h2>
@@ -101,6 +138,11 @@
       </ul>
     </div>
   </section>
+
+
+  <!-- ===SECTION THREE=== -->
+
+
   <section class="section-three">
     <div class="container">
       <h2 class="section-tittle">Our Team</h2>
@@ -231,6 +273,12 @@
       </ul>
     </div>
   </section>
+
+
+  <!-- ===SECTION FOUR=== -->
+
+
+
   <section class="section-four">
     <div class="container">
       <h2 class="section-tittle">Our Portfolio</h2>
@@ -311,6 +359,11 @@
     </div>
   </section>
 </main>
+
+
+<!-- ===FOOTER=== -->
+
+
 <footer class="footer-container">
   <div class="container-footer container">
     <div class="footer-container-logo_text">
