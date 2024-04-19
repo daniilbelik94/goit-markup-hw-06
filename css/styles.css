@@ -382,12 +382,12 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
   display: flex;
   justify-content: center;
   flex-direction: column;
-  gap: 72px;
+  align-items: center;
+  gap: 72px 28px;
   width: calc(100% - 24px);
-  
+  margin: 0 auto;
 }
 .team__item {
-  margin: 0 auto;
   width: 264px;
   overflow: hidden;
   background-color: #ffffff;
