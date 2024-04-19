@@ -42,7 +42,7 @@ img {
 }
 
 .container {
-  max-width: 1158px;
+  max-width: 320px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -306,7 +306,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 /* === section two === */
 
 
-.features__title,
+.feature__title,
 .team__title,
 .portfolio__title {
   font-weight: 700;
@@ -355,11 +355,13 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 .feature__title {
   text-align: center;
   margin-bottom: 8px;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-size: 36px;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: none;
 }
 .feature__description,
 .team__position,
@@ -368,6 +370,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
   letter-spacing: 0.02em;
   color: #434455;
   font-weight: 500;
+  line-height: 24px;
 }
 
 
@@ -411,6 +414,7 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 }
 .team__position {
   margin-bottom: 8px;
+  font-weight: 400;
 }
 .team__social {
   display: flex;
@@ -508,7 +512,9 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
   color: #2e2f42;
   margin-bottom: 8px;
 }
-
+.portfolio__category {
+  font-weight: 400;
+}
 
 /* === footer === */
 
@@ -541,12 +547,14 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 .footer__logo-text {
   color: #f4f4fd;
 }
+
 .footer__description {
-  
   text-align: left;
   color: #f4f4fd;
   letter-spacing: 0.02em;
-  width: 288px;
+  font-weight: normal;
+  line-height: 1.5;
+  font-size: 16px;
   
 }
 
@@ -866,12 +874,18 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 }
 
 @media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
   .header-nav {
     display: flex;
     align-items: center;
   }
   .header__logo {
     margin-right: 120px;
+    padding: 16px 0;
   }
   .header__menu {
     display: flex;
@@ -939,6 +953,20 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
       url("../images/tablet/hero-x1.jpg");
   }
+  .features__title {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 1px;
+  text-align: left;
+  }
+  .feature__description,
+  .team__position,
+  .portfolio__category {
+    font-weight: 400;
+  }
+  
   .section__title {
     font-size: 56px;
     line-height: 1.07;
@@ -954,9 +982,6 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
   .feature__list-item {
     width: calc((100% - 24px) / 2);
 
-  }
-  .feature__title {
-    text-align: left;
   }
 
    /* ul can't break */
@@ -1003,18 +1028,22 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
 }
 
 @media (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
 
  .header {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
     
 }
-.header__wrapper {
-  border-bottom: 1px solid #e7e9fc;
-box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
+
 .header__nav {
     display: flex;
   margin: 0;
@@ -1057,17 +1086,28 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
   font-size: 56px;
   margin: 0 auto 48px auto;
   }
+  .feature__title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0;
+  }
+  .feature__description {
+    letter-spacing: 0.01em;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: left;
+    line-height: 24px;
+    font-weight: 400;
+  }
 .features__list {
-  
     display: flex;
     gap: 24px;
 }
 .feature__list-item {
   width: calc((100% - 72px) / 4);
 }
-.feature__description {
-  font-weight: 400;
-}
+
 .feature__icon {
     width: 100%;
     display: flex;
@@ -1123,5 +1163,11 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .footer__social {
   margin-right: 80px;
 }
+}
+.footer__description {
+  color: #f4f4fd;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
