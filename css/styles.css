@@ -961,14 +961,14 @@ box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
   letter-spacing: 1px;
   text-align: left;
   }
-  .feature__description,
+  .feature__description {
+    font-weight: 500;
+  }
   .team__position,
   .portfolio__category {
     font-weight: 400;
   }
-  .feature__description {
-    font-weight: 500;
-  }
+  
   .section__title {
     font-size: 56px;
     line-height: 1.07;
